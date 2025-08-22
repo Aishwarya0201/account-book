@@ -1,0 +1,82 @@
+<div class="main col-10 col-md-8 col-lg-6 m-auto p-3">
+  <form class="border border-1" (ngSubmit)="onSubmit()">
+    <h3 class="text-center pt-4">Add New Transaction</h3>
+    <div class="row px-4 pb-4">
+      <div class="col-12 col-md-6 col-lg-6">
+        <label class="text-capitalize mt-2">Date:</label>
+        <input
+          type="date"
+          class="form-control"
+          [(ngModel)]="newTransaction.date"
+          name="date"
+          placeholder="Select a date"
+        />
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6">
+        <label class="text-capitalize mt-2">Counterparty:</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="newTransaction.counterparty"
+          name="counterparty"
+          placeholder="Enter counterparty name"
+        />
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6">
+        <label class="text-capitalize mt-2">Narration:</label>
+        <input
+          type="text"
+          class="form-control"
+          [(ngModel)]="newTransaction.narration"
+          name="narration"
+          placeholder="Enter narration"
+        />
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6">
+        <label class="text-capitalize mt-2">Debit:</label>
+        <input
+          class="form-control"
+          type="number"
+          [(ngModel)]="newTransaction.debit"
+          name="debit"
+          placeholder="Enter debit amount"
+        />
+      </div>
+
+      <div class="col-12 col-md-6 col-lg-6">
+        <label class="text-capitalize mt-2">Credit:</label>
+        <input
+          class="form-control"
+          type="number"
+          [(ngModel)]="newTransaction.credit"
+          name="credit"
+          placeholder="Enter credit amount"
+        />
+      </div>
+
+      <div
+        class="col-12 col-md-6 col-lg-6 d-flex justify-content-between align-items-center"
+      >
+        <button class="btn btn-outline-success mt-4 btn-sm" type="submit">
+          Save
+        </button>
+        <button
+          class="btn btn-outline-secondary mt-4 btn-sm"
+          (click)="Discard()"
+        >
+          Revert
+        </button>
+        <button
+          class="btn btn-sm btn-outline-danger mt-4"
+          title="Delete"
+          (click)="delet()"
+        >
+          Delete
+        </button>
+      </div>
+    </div>
+  </form>
+</div>

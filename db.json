@@ -1,0 +1,69 @@
+{
+  "accounts": [
+    {
+      "date": "2022-01-12",
+      "counterparty": "John Doe",
+      "narration": "Payment for services rendered",
+      "debit": 500,
+      "balance": 1000,
+      "id": "6141"
+    },
+    {
+      "date": "2022-01-15",
+      "counterparty": "Jane Smith",
+      "narration": "Received payment for invoice",
+      "credit": 200,
+      "balance": 1200,
+      "id": "e84f"
+    },
+    {
+      "date": "2022-01-18",
+      "counterparty": "ABC Corporation",
+      "narration": "Payment for goods purchased",
+      "debit": 800,
+      "balance": 400,
+      "id": "c185"
+    },
+    {
+      "date": "2022-01-20",
+      "counterparty": "XYZ Inc.",
+      "narration": "Received interest on investment",
+      "credit": 150,
+      "balance": 1150,
+      "id": "a23b"
+    },
+    {
+      "date": "2022-01-22",
+      "counterparty": "Bob Johnson",
+      "narration": "Payment for consulting services",
+      "debit": 300,
+      "balance": 700,
+      "id": "d56e"
+    },
+    {
+      "date": "2022-01-25",
+      "counterparty": "Bank of America",
+      "narration": "Deposit of paycheck",
+      "credit": 1000,
+      "balance": 2000,
+      "id": "f789"
+    },
+    {
+      "date": "2022-01-28",
+      "counterparty": "Microsoft Corporation",
+      "narration": "Payment for software subscription",
+      "debit": 200,
+      "balance": 800,
+      "id": "g910"
+    },
+    {
+      "id": "f467",
+      "date": "2024-08-21",
+      "counterparty": "CodeNifty Pvt Ltd",
+      "narration": "Payment for services rendered",
+      "debit": null,
+      "credit": 5000,
+      "balance": 6000
+    }
+  ]
+}
