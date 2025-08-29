@@ -30,3 +30,9 @@ description = "AWS Access Key"
 regex = '''AKIA[0-9A-Z]{16}'''
 tags = ["key", "aws"]
 
+[[rules]]
+id = "dummy-secret-test"
+description = "Test rule for detecting dummy-secret keyword"
+regex = '''dummy-secret'''
+tags = ["test"]
+
