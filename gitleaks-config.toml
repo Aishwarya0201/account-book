@@ -1,0 +1,32 @@
+title = "Custom Angular Secrets Detection"
+
+[[rules]]
+id = "hardcoded-password"
+description = "Hardcoded Password"
+regex = '''(?i)(password|pwd|pass)\s*[:=]\s*['"][^'"]{3,}['"]'''
+tags = ["password"]
+
+[[rules]]
+id = "hardcoded-username"
+description = "Hardcoded Username (admin/root/test/guest)"
+regex = '''(?i)(username|user|uname)\s*[:=]\s*['"](admin|root|test|guest)['"]'''
+tags = ["username"]
+
+[[rules]]
+id = "private-key"
+description = "Private Key"
+regex = '''-----BEGIN( RSA| DSA| EC)? PRIVATE KEY-----'''
+tags = ["key", "crypto"]
+
+[[rules]]
+id = "github-token"
+description = "GitHub Token"
+regex = '''gh[pousr]_[A-Za-z0-9_]{36}'''
+tags = ["token", "github"]
+
+[[rules]]
+id = "aws-access-key"
+description = "AWS Access Key"
+regex = '''AKIA[0-9A-Z]{16}'''
+tags = ["key", "aws"]
+
